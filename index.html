@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>xinliu.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<audio loop src="./music/1.mp3" autoplay="autoplay"></audio>
+				<section data-background="#4d7e65">
+					<h3>楼上店 —— 重构空间的新经济</h3>
+					<h4>Shops upstairs -- A new economy by reconstructuring space!</h4>
+					<p>
+						<small>Presented by <a href="http://user.qzone.qq.com/1603274897">Xin Liu</a> / Email: <a href="mailto:xinliu@ime.ac.cn">xinliu@ime.ac.cn</a></small>
+					</p>
+					<audio loop src="http://firstpage.blob.core.chinacloudapi.cn/resource/%25e9%2582%2580%25e7%25ba%25a62%2520%25e6%25b1%259f%25e6%259c%25a8%25e5%2585%25b0.mp3">Listen</audio>
+				</section>
+
+				<section data-background="#007777">
+					<h3>电商时代，实体商店何去何从？</h3>
+					<h4>In the era of Electronic Commerce, where shall physical stores go?</h4>
+					<a href="#" class="image navigate-down">
+						<img width="450" height="280" src="./image/0.jpg" alt="Down arrow">
+					</a>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h4>楼上店: 全新的形式与无与伦比的体验！</h2>
+						<h4>Shops upstairs: new style and distinct experience!</h2>
+						<p>
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="420" height="280" src="./image/1.jpg" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h3>更低的店铺成本</h3>
+						<h3>Lower Cost for shops</h3>
+						<p>
+						</p>
+						<a class="image">
+							<img width="380" height="250" src="./image/8.jpg" alt="Unicorn">
+							<img width="380" height="250" src="./image/9.jpg" alt="Unicorn">
+						</a>						
+					</section>
+					<section>
+						<h3>更舒适的感受</h3>
+						<h3>More comfortible sense</h3>
+						<p>
+						</p>
+						<a class="image">
+							<img width="380" height="250" src="./image/6.jpg" alt="Unicorn">
+							<img width="380" height="250" src="./image/7.jpg" alt="Unicorn">
+						</a>
+					</section>
+					<section>
+						<h3>更愉悦的氛围</h3>
+						<h3>More joyful atmosphere</h3>
+						<a href="#/2" class="image">
+							<img width="450" height="280" src="./image/4.jpg" alt="together">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h3>加入我们，一起颠覆这个世界！</h3>
+					<h3>Join us, let's overturn the world!</h3>
+					<p>
+					</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
